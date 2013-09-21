@@ -1,10 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/CameraTouchDetection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AnimationHandler.cs">
     <Files>
+      <File FileName="../../Downloads/CameraTouchDetection.cs" Line="267" Column="55" />
       <File FileName="Assets/Scripts/Input/TouchInput/TouchLogic.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Input/Touch3d.cs" Line="1" Column="1" />
-      <File FileName="../../Downloads/CameraTouchDetection.cs" Line="178" Column="1" />
+      <File FileName="Assets/Scripts/Input/TouchInput/TouchInterpreter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameObjectBehavior/TapDestroy.js" Line="2" Column="1" />
+      <File FileName="Assets/Scripts/AnimationHandler.cs" Line="15" Column="35" />
+      <File FileName="Assets/Scripts/GameObjectBehavior/TapDestroy2.cs" Line="11" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

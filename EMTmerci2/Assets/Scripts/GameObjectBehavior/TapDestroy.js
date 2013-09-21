@@ -1,8 +1,10 @@
 ﻿#pragma strict
 
+
 function OnMouseDown () {
 
-	Destroy(gameObject);
+	SendMessage("OnSew");
+//	Destroy(gameObject);
 
 }
 

@@ -26,22 +26,30 @@ public class TouchInterpreter : MonoBehaviour {
 			
 			TouchControls();
 			
+		}		
+
 	}
-			
-	
+
+
 	void MouseControls(){
 			
-			if(Input.GetMouseButtonDown=0)){
+			if(Input.GetMouseButtonDown(0)){
 				
 				RaycastHit hit;
 				Ray ray = mainCamera.ScreenPointToRay (Input.mousePosition);
 				
 				
 				if(!Physics.Raycast (ray, out hit, 10000)) return;
-				touchPos = mainCamera.ScreenToWorldPoint
+				touchPos = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+				foreach(GameObject notifiedObj in notifiedObjects);
+				isTouched = true;
+				
 			
-		}	
+		}
+}
 		
 		
+		void TouchControls(){		
 			
+}
 }

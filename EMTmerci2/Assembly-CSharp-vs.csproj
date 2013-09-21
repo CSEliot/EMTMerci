@@ -44,6 +44,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AnimationHandler.cs" />
+     <Compile Include="Assets\Scripts\GameObjectBehavior\TapDestroy2.cs" />
      <Compile Include="Assets\Scripts\Input\Touch3d.cs" />
      <Compile Include="Assets\Scripts\Input\TouchInput\TouchInterpreter.cs" />
      <Compile Include="Assets\Scripts\Input\TouchInput\TouchLogic.cs" />

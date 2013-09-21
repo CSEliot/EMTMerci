@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{E205A0D5-FA1E-AAC3-37ED-B1AD961B61C9}") = "EMTmerci2", "Assembly-CSharp.csproj", "{BA4AC5D2-5632-74B0-38FC-9C85E5590CF7}"
 EndProject
+Project("{E205A0D5-FA1E-AAC3-37ED-B1AD961B61C9}") = "EMTmerci2", "Assembly-CSharp-Editor.csproj", "{60827F7B-FAA4-2C86-7B27-118F4507D0E1}"
+EndProject
 Project("{E205A0D5-FA1E-AAC3-37ED-B1AD961B61C9}") = "EMTmerci2", "Assembly-UnityScript.unityproj", "{0AE4D5EB-6AB3-391D-0EB9-67CC98E45929}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{BA4AC5D2-5632-74B0-38FC-9C85E5590CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4AC5D2-5632-74B0-38FC-9C85E5590CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4AC5D2-5632-74B0-38FC-9C85E5590CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60827F7B-FAA4-2C86-7B27-118F4507D0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60827F7B-FAA4-2C86-7B27-118F4507D0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60827F7B-FAA4-2C86-7B27-118F4507D0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60827F7B-FAA4-2C86-7B27-118F4507D0E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0AE4D5EB-6AB3-391D-0EB9-67CC98E45929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0AE4D5EB-6AB3-391D-0EB9-67CC98E45929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AE4D5EB-6AB3-391D-0EB9-67CC98E45929}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																							GlobalSection(MonoDevelopProperties) = preSolution
+																																GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
