@@ -1,18 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TapDestroy2 : MonoBehaviour {
+public class TapDestroy2 : TouchObject {
 	
 	public Transform WoundAnimator;
 	
 	// Use this for initialization
-	void OnMouseDown () {
-	
+	public override void OnTap(GestureObject g)
+    {
+        print("ON TAP");
 		WoundAnimator.SendMessage("OnSew");
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
