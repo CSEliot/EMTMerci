@@ -1,0 +1,7 @@
+# Blender v2.67 (sub 0) OBJ File: ''
+# www.blender.org
+mtllib line.mtl
+o Line_Plane
+v 1.000000 0.000000 0.001602
+v -1.000000 0.000000 0.001602
+f 1 2
