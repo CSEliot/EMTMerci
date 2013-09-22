@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
 public class TouchObject : MonoBehaviour {
 
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -15,7 +18,7 @@ public class TouchObject : MonoBehaviour {
 
     public virtual void OnTap(GestureObject g)
     {
-
+		
     }
 
     public virtual void OnDrag(GestureObject g)
