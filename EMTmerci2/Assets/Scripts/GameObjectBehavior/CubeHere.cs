@@ -9,6 +9,7 @@ public class CubeHere : TouchObject {
 	public override void OnTap (GestureObject g) {
 	
 		TouchReceiver.SendMessage("CubeHere", this.transform);
+		Camera.main.SendMessage("ResetCam");
 		
 	}
 	

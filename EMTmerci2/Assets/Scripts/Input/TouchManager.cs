@@ -33,11 +33,25 @@ public class TouchManager : MonoBehaviour
         foreach (GestureObject g in gestures.Values)
         {
             boundObjects.TryGetValue(g.Id, out touchedObject);
-            if (touchedObject != null)
+
+	//Pauls shitty code	prob needs to be deleted	
+			if (touchedObject == null){
+				
+				TouchObject touchObj = Camera.main.GetComponent<TouchObject>();
+				
+				if(g.GameGesture == GestureObject.GameGestureType.Drag){
+					
+					touchObj.OnScreenDrag(g);
+				}
+			}
+	//End of paul's shitty code delete it prob
+			
+			if (touchedObject != null)
             {
                 TouchObject touchObj = touchedObject.GetComponent<TouchObject>();
                 CommonFlags touchObjFlags = touchedObject.GetComponent<CommonFlags>();
-                if (touchObj != null && touchObjFlags.IsEnabled)
+                
+				if (touchObj != null && touchObjFlags.IsEnabled)
                 {
                     if (g.GameGesture == GestureObject.GameGestureType.Tap)
                     {
@@ -120,6 +134,7 @@ public class TouchManager : MonoBehaviour
                     if (g.GameGesture == GestureObject.GameGestureType.Hold || g.GameGesture == GestureObject.GameGestureType.None)
                     {
                         g.GameGesture = GestureObject.GameGestureType.Tap;
+						
                     }
                     else if (g.GameGesture == GestureObject.GameGestureType.Drag)
                     {

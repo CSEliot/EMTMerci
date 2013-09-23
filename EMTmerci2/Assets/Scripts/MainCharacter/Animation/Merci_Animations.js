@@ -6,6 +6,7 @@ var animator : Animator;
 function Run () {
 
 	animator.SetBool("isRunning", true);
+	animator.SetBool("isOperating", false);
 
 }
 
@@ -15,5 +16,7 @@ function Idle(){
 }
 
 function Operate () {
+
+	animator.SetBool("isOperating", true);
 
 }

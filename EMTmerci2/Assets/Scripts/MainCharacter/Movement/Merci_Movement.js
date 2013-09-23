@@ -99,6 +99,7 @@ function StateMachine(){
 		
 	function Operate(){
 			
+			AnimatingBones.SendMessage("Operate");
 			
 		}
 		
@@ -133,10 +134,26 @@ function StateMachine(){
 }
 
 
+//Behavorial Interactions Below//
+
+	function OnTriggerEnter(hit : Collider){
+	
+		if(hit.gameObject.transform == target){
+		
+		AtTarget = true;
+		
+		
+		}
+	
+	}
+
+
 	function CubeHere(NewTarget){
 	
-		target = NewTarget;
-		HasPatient = true;
-	
+		if(NewTarget != target){
+			target = NewTarget;
+			AtTarget = false;
+			HasPatient = true;
+		}
 	}
 @script RequireComponent(Collider)

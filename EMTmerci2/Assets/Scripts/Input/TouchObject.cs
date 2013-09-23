@@ -35,4 +35,10 @@ public class TouchObject : MonoBehaviour {
     {
 
     }
+	
+	//Paul
+	public virtual void OnScreenDrag(GestureObject g)
+    {
+		
+    }
 }
