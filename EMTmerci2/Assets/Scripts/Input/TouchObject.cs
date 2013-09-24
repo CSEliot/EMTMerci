@@ -41,4 +41,9 @@ public class TouchObject : MonoBehaviour {
     {
 		
     }
+	
+	public virtual void OnScreenEnd(GestureObject g)
+    {
+		
+    }
 }

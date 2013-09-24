@@ -61,7 +61,7 @@ public class TouchLogic : MonoBehaviour
     //this is for 3d objects with colliders
     if(Input.GetTouch(i).phase == TouchPhase.Began)
     {
-     ray = Camera.mainCamera.ScreenPointToRay(Input.GetTouch(i).position);//creates ray from screen point position
+     ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);//creates ray from screen point position
      if(Physics.Raycast(ray, out rayHitInfo))
      {
         rayHitInfo.transform.gameObject.SendMessage("OnTouchBegan3D");

@@ -35,15 +35,22 @@ public class TouchManager : MonoBehaviour
             boundObjects.TryGetValue(g.Id, out touchedObject);
 
 	//Pauls shitty code	prob needs to be deleted	
-			if (touchedObject == null){
-				
-				TouchObject touchObj = Camera.main.GetComponent<TouchObject>();
-				
+
 				if(g.GameGesture == GestureObject.GameGestureType.Drag){
 					
-					touchObj.OnScreenDrag(g);
-				}
+					TouchObject camSwing = Camera.main.GetComponent<TouchObject>();
+					
+					camSwing.OnScreenDrag(g);
 			}
+				if(g.GameGesture != GestureObject.GameGestureType.Drag){
+				
+					TouchObject camSwing = Camera.main.GetComponent<TouchObject>();
+					
+					camSwing.OnScreenEnd(g);
+				}
+			
+				
+
 	//End of paul's shitty code delete it prob
 			
 			if (touchedObject != null)
@@ -131,6 +138,7 @@ public class TouchManager : MonoBehaviour
             {
                 if (t.phase == TouchPhase.Ended)
                 {
+					
                     if (g.GameGesture == GestureObject.GameGestureType.Hold || g.GameGesture == GestureObject.GameGestureType.None)
                     {
                         g.GameGesture = GestureObject.GameGestureType.Tap;
@@ -140,7 +148,9 @@ public class TouchManager : MonoBehaviour
                     {
                         g.GameGesture = GestureObject.GameGestureType.Pull;
                         g.EndPosition = t.position;
-                    }
+                   		
+					} 
+
                 }
                 else if (t.phase == TouchPhase.Moved)
                 {

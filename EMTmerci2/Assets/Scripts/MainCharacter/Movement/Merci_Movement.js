@@ -140,7 +140,9 @@ function StateMachine(){
 	
 		if(hit.gameObject.transform == target){
 		
+		Camera.main.SendMessage("Operate");
 		AtTarget = true;
+		hit.gameObject.collider.enabled = false;
 		
 		
 		}
@@ -151,6 +153,7 @@ function StateMachine(){
 	function CubeHere(NewTarget){
 	
 		if(NewTarget != target){
+			target.gameObject.collider.enabled = true;
 			target = NewTarget;
 			AtTarget = false;
 			HasPatient = true;

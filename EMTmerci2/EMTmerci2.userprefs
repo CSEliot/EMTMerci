@@ -1,26 +1,26 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CameraManager.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input/TouchManager.cs">
     <Files>
+      <File FileName="Assets/Scripts/GameObjectBehavior/CubeHere.cs" Line="1" Column="1" />
       <File FileName="../../Downloads/CameraTouchDetection.cs" Line="267" Column="55" />
       <File FileName="../../Projects/unity/PaulCoding/Paulcode/Assets/Scripts/Zombie/ZombieAI.js" Line="195" Column="3" />
+      <File FileName="Assets/Scripts/GameObjectBehavior/Sliceable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Input/TouchManager.cs" Line="144" Column="7" />
       <File FileName="Assets/Scripts/Input/TouchInput/TouchLogic.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input/Touch3d.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input/TouchInput/TouchInterpreter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Input/TouchObject.cs" Line="40" Column="34" />
       <File FileName="Assets/Scripts/AnimationHandler.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GameObjectBehavior/TapDestroy2.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameObjectBehavior/CubeHere.cs" Line="1" Column="1" />
       <File FileName="Assets/MixamoAnimatorEvents/AnimatorEvents.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameObjectBehavior/Sliceable.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameObjectBehavior/TapDestroy.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MainCharacter/Animation/Merci_Animations.js" Line="9" Column="41" />
-      <File FileName="Assets/Scripts/MainCharacter/Movement/Merci_Movement.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input/TouchManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input/TouchObject.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GameObjectBehavior/AmputationController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Input/CommonFlags.cs" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets (Mobile)/Scripts/Joystick.js" Line="90" Column="30" />
-      <File FileName="Assets/CameraManager.js" Line="5" Column="1" />
+      <File FileName="Assets/Standard Assets/Scripts/Camera Scripts/SmoothLookAt.js" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Scripts/Camera Scripts/SmoothFollow.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameObjectBehavior/TapDestroy.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MainCharacter/Animation/Merci_Animations.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MainCharacter/Movement/Merci_Movement.js" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets (Mobile)/Scripts/Joystick.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CameraManagerC.cs" Line="30" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
