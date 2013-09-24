@@ -90,6 +90,11 @@ public class CameraManagerC : TouchObject {
 		SwipeOnce = false;
 		
 	}
+	
+	public void ResetCam(){
+
+	TargetNum = 1;
+}
 
 	}
 
