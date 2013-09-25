@@ -73,8 +73,11 @@ public class Sliceable : MonoBehaviour {
         bc.size = new Vector3(mesh.bounds.size.x * 0.8f, mesh.bounds.size.y * 0.8f, mesh.bounds.size.z * 0.8f); // reset size, bit smaller than real
         bc.center = mesh.bounds.center;
 
+
         BoxCollider cloneBc = clone.GetComponent<BoxCollider>();
         cloneBc.size = new Vector3(cloneMesh.bounds.size.x * 0.8f, cloneMesh.bounds.size.y * 0.8f, cloneMesh.bounds.size.z * 0.8f);
         cloneBc.center = cloneMesh.bounds.center;
+		cloneBc.rigidbody.useGravity = true;
+		cloneBc.isTrigger = false;
     }
 }

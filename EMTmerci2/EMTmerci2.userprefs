@@ -1,6 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input/TouchManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraManagerC.cs">
     <Files>
       <File FileName="../../Downloads/CameraTouchDetection.cs" Line="267" Column="55" />
       <File FileName="Assets/Standard Assets/Scripts/Camera Scripts/SmoothFollow.js" Line="1" Column="1" />
@@ -15,12 +15,12 @@
       <File FileName="Assets/MixamoAnimatorEvents/AnimatorEvents.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GameObjectBehavior/AmputationController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Input/CommonFlags.cs" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets/Scripts/Camera Scripts/SmoothLookAt.js" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Scripts/Camera Scripts/SmoothLookAt.js" Line="28" Column="2" />
       <File FileName="Assets/Scripts/GameObjectBehavior/TapDestroy.js" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MainCharacter/Animation/Merci_Animations.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MainCharacter/Movement/Merci_Movement.js" Line="156" Column="46" />
+      <File FileName="Assets/Scripts/MainCharacter/Movement/Merci_Movement.js" Line="1" Column="1" />
       <File FileName="Assets/Standard Assets (Mobile)/Scripts/Joystick.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CameraManagerC.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CameraManagerC.cs" Line="94" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
