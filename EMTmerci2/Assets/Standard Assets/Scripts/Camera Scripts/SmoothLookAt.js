@@ -1,5 +1,6 @@
 
 var target : Transform;
+var OperateTarget : Transform;
 var damping = 6.0;
 var smooth = true;
 var originalTar : Transform;
@@ -25,6 +26,11 @@ function LateUpdate () {
 function ResetCam(){
 
 	target = originalTar;
+}
+
+function Operate(){
+
+	target = OperateTarget;
 }
 
 function Start () {

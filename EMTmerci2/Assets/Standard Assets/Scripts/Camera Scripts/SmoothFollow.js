@@ -27,13 +27,19 @@ var rotationDamping = 3.0;
 function Operate(){
 
 	target = operateTarget;
-
+	height = 8.04;
+	distance = 4.64;
+	heightDamping = 100000;
+	rotationDamping = 100000;
 }
 
 function Norm(){
 
 	target = normTarget;
-
+	height = 2;
+	distance = 7;
+	heightDamping = 10000;
+	rotationDamping = 10000;
 }
 
 

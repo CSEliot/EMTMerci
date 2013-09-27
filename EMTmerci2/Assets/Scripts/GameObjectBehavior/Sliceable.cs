@@ -5,7 +5,8 @@ using System.Collections.Generic;
 public class Sliceable : MonoBehaviour {
 
     public Transform slicePrefab;
-
+	public Transform bloodPrefab;
+	
 	// Use this for initialization
 	void Start () 
     {
@@ -47,6 +48,7 @@ public class Sliceable : MonoBehaviour {
 
         Vector3 planeCenter = new Vector3((p1.x + p3.x) / 2, (p1.y + p3.y) / 2, (p1.z + p3.z) / 2);
         print("CENTER OF PLANE " + planeCenter);
+		
 
         for (int i = 0; i < vertices.Length; i++)
         {

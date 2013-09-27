@@ -13,7 +13,7 @@ public class CameraManagerC : TouchObject {
 	public Transform camT2;
 	public Transform camT3;
 	public Transform camT4;
-//	public Transform camT5;
+	public Transform camT5;
 //	public Transform camT6;
 	
 	public TouchPhase Logi;
@@ -28,10 +28,15 @@ public class CameraManagerC : TouchObject {
 		SwipeVector = g.StartPosition - g.EndPosition;
 //		Debug.Log(SwipeVector.x);
 		SwipeMagnitude = SwipeVector.x;
-		
+			
+		if(((SwipeMagnitude <= -SwipeThres) || (SwipeMagnitude >= SwipeThres)) && (TargetNum == 5) && (SwipeOnce == false)){
+			
+			ResetCam();
+			SwipeOnce = true;
+		}
 
 
-		if((SwipeMagnitude <= -SwipeThres) && (TargetNum != 4) && (SwipeOnce == false)){
+		if((SwipeMagnitude <= -SwipeThres) && (TargetNum < 4) && (SwipeOnce == false)){
 			
 			TargetNum ++;
 			SwipeOnce = true;
@@ -41,7 +46,7 @@ public class CameraManagerC : TouchObject {
 			SwipeOnce = true;
 	
 			}
-		if((SwipeMagnitude >= SwipeThres) && (TargetNum != 1) && (SwipeOnce == false)){
+		if((SwipeMagnitude >= SwipeThres) && (TargetNum > 1) && (TargetNum < 5) && (SwipeOnce == false)){
 			
 			TargetNum --;
 			SwipeOnce = true;
@@ -69,10 +74,10 @@ public class CameraManagerC : TouchObject {
 			
 			LookAtTarget = camT4;
 		}
-//		if(TargetNum == 5){
-//			
-//			LookAtTarget = camT5;
-//		}
+		if(TargetNum == 5){
+			
+			LookAtTarget = camT5;
+		}
 //		if(TargetNum == 6){
 //			
 //			LookAtTarget = camT6;
@@ -90,6 +95,10 @@ public class CameraManagerC : TouchObject {
 		SwipeOnce = false;
 		
 	}
+	public void Operate(){
+
+	TargetNum = 5;
+}
 	
 	public void ResetCam(){
 

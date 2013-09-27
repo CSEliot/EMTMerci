@@ -10,7 +10,12 @@ var AnimatingBones : Transform;
 var RunSpeed : float = 5;
 //var animator : Animator;
 
-
+//visibility items variables
+var GunOut : Transform;
+var GunBack : Transform;
+var LazerOut : Transform;
+var Lazer2Out : Transform;
+var SawOut : Transform;
 
 enum merciState{IdleStill, RunningTo, Hiding, Operating, isDead
 }
@@ -100,6 +105,11 @@ function StateMachine(){
 	function Operate(){
 			
 			AnimatingBones.SendMessage("Operate");
+			GunBack.renderer.enabled = false;
+			GunOut.renderer.enabled = true;
+			LazerOut.renderer.enabled = true;
+			Lazer2Out.renderer.enabled = true;
+			SawOut.renderer.enabled = true;
 			
 		}
 		
@@ -119,7 +129,7 @@ function StateMachine(){
 	function Running(){
 		
 		var controller : CharacterController = GetComponent(CharacterController);
-		var RotationSpeed : float = 5;
+		var RotationSpeed : float = 10;
 		var NeededRotation = Quaternion.LookRotation(target.position - transform.position);
 		
 		
@@ -127,6 +137,11 @@ function StateMachine(){
 			transform.rotation.x = 0;
 			transform.rotation.z = 0;
 			AnimatingBones.SendMessage("Run");
+			GunBack.renderer.enabled = true;
+			GunOut.renderer.enabled = false;
+			LazerOut.renderer.enabled = false;
+			Lazer2Out.renderer.enabled = false;
+			SawOut.renderer.enabled = false;
 			
 			controller.SimpleMove(transform.TransformDirection(Vector3.forward * RunSpeed));
 			
@@ -153,10 +168,21 @@ function StateMachine(){
 	function CubeHere(NewTarget){
 	
 		if(NewTarget != target){
+			target.SendMessage("OnTriggerEnter");
 			target.gameObject.collider.enabled = true;
 			target = NewTarget;
 			AtTarget = false;
 			HasPatient = true;
 		}
+	}
+	
+	function Slow(){
+	
+		RunSpeed -= 10;
+	}
+	
+	function Fast(){
+	
+		RunSpeed += 10;
 	}
 @script RequireComponent(Collider)

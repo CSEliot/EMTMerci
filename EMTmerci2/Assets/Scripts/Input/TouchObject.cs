@@ -25,6 +25,11 @@ public class TouchObject : MonoBehaviour {
     {
 
     }
+	
+	public virtual void OnHold(GestureObject g)
+    {
+
+    }
 
     public virtual void OnPull(GestureObject g)
     {
